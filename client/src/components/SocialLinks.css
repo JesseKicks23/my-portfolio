@@ -1,0 +1,24 @@
+/* src/components/SocialLinks.css */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem; /* Space between icons */
+    margin-top: 1.5rem;
+}
+
+.social-links a {
+    color: #333; /* Default icon color */
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #0077B5; /* LinkedIn blue */
+}
+
+.social-links a:nth-child(2):hover { /* GitHub */
+    color: #6e5494; /* GitHub purple */
+}
+
+.social-links a:nth-child(3):hover { /* Email */
+    color: #D44638; /* Gmail red */
+}

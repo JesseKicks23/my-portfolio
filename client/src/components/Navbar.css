@@ -1,0 +1,216 @@
+/*
+ * IMPORTANT: Add this font import to your global CSS file (e.g., src/index.css or src/App.css)
+ * for the 'Poppins' font to be available throughout your application.
+ *
+ * @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+ */
+
+/* --- Base Navbar Styles --- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 4rem; /* More generous padding, slight increase */
+  background-color: #202a33; /* Deeper, richer dark blue/almost black */
+  /* background: linear-gradient(to right, #2c3e50, #1a232f); */ /* Optional: subtle gradient */
+  color: #e0e0e0; /* Softer light text */
+  position: sticky; /* Makes it stick to the top */
+  top: 0;
+  z-index: 1000; /* Ensures it's above other content */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* More diffused shadow */
+  font-family: 'Poppins', sans-serif; /* Apply modern font (make sure it's imported globally) */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* Subtle bottom border */
+}
+
+.navbar-brand {
+  font-size: 2rem; /* Larger and more prominent */
+  font-weight: 700; /* Bolder */
+  color: #fff; /* Pure white for brand name */
+  text-decoration: none;
+  letter-spacing: -0.5px; /* Slightly tighter letter spacing */
+}
+
+/* --- Desktop Navigation Links --- */
+.navbar-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 3rem; /* Increased space between links */
+}
+
+.navbar-links li {
+  margin: 0; /* Ensure no extra margin */
+}
+
+.navbar-links a {
+  color: #e0e0e0; /* Softer light color for links */
+  text-decoration: none;
+  font-size: 1.1rem; /* Slightly refined size */
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.2s ease-out; /* Add transform transition */
+  padding-bottom: 0.3rem; /* More space for underline */
+  position: relative;
+  display: inline-block; /* Essential for transform */
+}
+
+.navbar-links a:hover {
+  color: #6a93cb; /* Brighter accent blue on hover */
+  transform: translateY(-2px); /* Subtle lift on hover */
+}
+
+/* Enhanced Underline Effect */
+.navbar-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%; /* Start from center */
+  transform: translateX(-50%); /* Center the line */
+  background-color: #6a93cb; /* Accent color */
+  transition: width 0.3s ease-in-out; /* Smooth width transition */
+}
+
+.navbar-links a:hover::after,
+.navbar-links a.active-link::after /* For active link styling, if implemented */ {
+  width: 100%;
+}
+
+
+/* --- Hamburger Menu Styles (for mobile) --- */
+.hamburger-menu {
+  display: none; /* Hidden by default on desktop */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  position: relative;
+  z-index: 1001; /* Ensure it's above other elements */
+  display: flex; /* Make it a flex container for centering bars */
+  flex-direction: column;
+  justify-content: space-around;
+  height: 20px; /* Adjust height to fit bars */
+  width: 30px; /* Adjust width */
+}
+
+.hamburger-menu .bar {
+  display: block;
+  width: 100%; /* Full width */
+  height: 2px; /* Thinner bars */
+  background-color: #fff; /* White bars */
+  margin: 4px 0; /* Slightly less margin */
+  transition: all 0.3s ease-in-out;
+  border-radius: 2px;
+}
+
+/* Hamburger active state (X shape) */
+.hamburger-menu.active .bar:nth-child(2) {
+  opacity: 0; /* Hide middle bar */
+}
+.hamburger-menu.active .bar:nth-child(1) {
+  transform: translateY(6px) rotate(45deg); /* Adjusted transform */
+}
+.hamburger-menu.active .bar:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg); /* Adjusted transform */
+}
+
+
+/* --- Media Queries for Mobile Responsiveness --- */
+@media (max-width: 992px) { /* Adjust breakpoint for larger tablets/laptops */
+  .navbar {
+    padding: 1rem 2rem;
+  }
+
+  .navbar-links {
+    gap: 1.5rem; /* Reduce gap on slightly smaller desktops */
+  }
+
+  .navbar-brand {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) { /* Common breakpoint for tablets and below */
+  .navbar {
+    padding: 1rem 1.5rem;
+    position: relative; /* Essential for absolute positioning of mobile menu */
+  }
+
+  .navbar-brand {
+    font-size: 1.6rem;
+  }
+
+  .hamburger-menu {
+    display: flex; /* Show hamburger on mobile */
+  }
+
+  .navbar-links {
+    /* Mobile Menu as Full-Screen Overlay/Drawer */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center links vertically */
+    align-items: center; /* Center links horizontally */
+    position: fixed; /* Fixed position for full screen overlay */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(32, 42, 51, 0.98); /* Semi-transparent dark overlay */
+    backdrop-filter: blur(8px); /* Subtle blur effect */
+    transition: transform 0.4s cubic-bezier(0.7, 0, 0.2, 1), opacity 0.4s ease-out; /* Smooth slide-in and fade */
+    transform: translateX(100%); /* Start off-screen to the right */
+    opacity: 0; /* Start invisible */
+    pointer-events: none; /* Prevent clicks when hidden */
+    z-index: 999; /* Below hamburger but above content */
+  }
+
+  .navbar-links.active {
+    transform: translateX(0); /* Slide in from right */
+    opacity: 1; /* Fade in */
+    pointer-events: all; /* Enable clicks when active */
+  }
+
+  /* Staggered animation for list items when menu is active */
+  .navbar-links li {
+    padding: 1rem 0;
+    opacity: 0; /* Start links invisible */
+    transform: translateY(20px); /* Start links slightly down */
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+  }
+
+  /* Apply transition delays for staggering effect */
+  .navbar-links.active li:nth-child(1) { transition-delay: 0.1s; opacity: 1; transform: translateY(0); }
+  .navbar-links.active li:nth-child(2) { transition-delay: 0.2s; opacity: 1; transform: translateY(0); }
+  .navbar-links.active li:nth-child(3) { transition-delay: 0.3s; opacity: 1; transform: translateY(0); }
+  .navbar-links.active li:nth-child(4) { transition-delay: 0.4s; opacity: 1; transform: translateY(0); }
+  .navbar-links.active li:nth-child(5) { transition-delay: 0.5s; opacity: 1; transform: translateY(0); }
+
+
+  .navbar-links a {
+    color: #fff; /* Pure white for mobile links */
+    font-size: 1.8rem; /* Much larger for touch */
+    padding: 0.8rem 0;
+    display: block; /* Make links take full available width for tapping */
+    width: fit-content; /* Allow content to dictate width for centering */
+    /* Remove underline on hover for mobile to keep clean */
+    &::after {
+      display: none;
+    }
+  }
+
+  .navbar-links a:hover {
+    background-color: transparent; /* No background hover */
+    color: #6a93cb;
+    transform: scale(1.05); /* Slight scale on hover/tap */
+  }
+}
+
+@media (max-width: 480px) { /* Smaller mobile screens */
+  .navbar-brand {
+    font-size: 1.4rem;
+  }
+  .navbar {
+    padding: 0.8rem 1rem;
+  }
+}

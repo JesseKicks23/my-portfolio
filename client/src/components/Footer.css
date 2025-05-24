@@ -1,0 +1,92 @@
+/* src/components/Footer.css */
+.footer {
+  background-color: #2c3e50; /* Darker, more professional blue-grey, consistent with text color */
+  color: #f8f9fa; /* Light text for contrast */
+  padding: 3rem 2rem; /* More generous padding */
+  text-align: center;
+  margin-top: 5rem; /* More space above the footer */
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem; /* Increased space between copyright and social links */
+  max-width: 1200px; /* Optional: constrain content width */
+  margin: 0 auto;
+}
+
+.footer-copyright {
+  margin: 0;
+  font-size: 1rem; /* Slightly larger font size */
+  opacity: 0.9; /* Slightly softer text color */
+}
+
+.footer-social-links {
+  display: flex;
+  gap: 1.8rem; /* More space between social icons */
+}
+
+.footer-social-links a {
+  color: #f8f9fa; /* Light color for icons */
+  transition: color 0.3s ease, transform 0.2s ease;
+  font-size: 1.5rem; /* Larger icon size */
+  display: flex; /* Ensures the icon is vertically centered if text is ever added */
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social-links a:hover {
+  color: #4a69bd; /* Accent color on hover */
+  transform: translateY(-3px); /* Subtle lift effect on hover */
+}
+
+/* Optional: Individual icon sizing if needed */
+.footer-icon {
+  font-size: 1.6rem; /* Ensures consistent size for all icons */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .footer-content {
+    gap: 1.2rem;
+  }
+
+  .footer-copyright {
+    font-size: 0.9rem;
+  }
+
+  .footer-social-links {
+    gap: 1.5rem;
+  }
+
+  .footer-social-links a {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 2rem 1rem;
+  }
+
+  .footer-content {
+    gap: 1rem;
+  }
+
+  .footer-copyright {
+    font-size: 0.85rem;
+  }
+
+  .footer-social-links {
+    gap: 1.2rem;
+  }
+
+  .footer-social-links a {
+    font-size: 1.2rem;
+  }
+}

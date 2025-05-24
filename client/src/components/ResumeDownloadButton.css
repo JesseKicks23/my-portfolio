@@ -1,0 +1,16 @@
+/* src/components/ResumeDownloadButton.css */
+.resume-button {
+    background-color: #00bcd4; /* A nice blue */
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem; /* Space below social links */
+  }
+  
+  .resume-button:hover {
+    background-color: #0097a7; /* Darker blue on hover */
+  }

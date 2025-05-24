@@ -1,0 +1,157 @@
+/* ExperienceSection.css */
+
+.experience-section {
+  padding: 5rem 2rem; /* Increased padding top/bottom */
+  background-color: #f8f9fa; /* Slightly lighter background */
+  text-align: center;
+}
+
+.section-title { /* New class for section titles */
+  font-size: 3rem; /* Larger and more prominent */
+  margin-bottom: 3.5rem; /* More space below title */
+  color: #2c3e50; /* Darker, professional color */
+  position: relative; /* For potential underline effect */
+  display: inline-block; /* To center underline */
+}
+
+.section-title::after { /* Optional: Underline effect */
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px; /* Adjust distance from text */
+  transform: translateX(-50%);
+  width: 60px; /* Length of the underline */
+  height: 4px; /* Thickness of the underline */
+  background-color: #4a69bd; /* Accent color */
+  border-radius: 2px;
+}
+
+.experience-container {
+  max-width: 950px; /* Slightly wider container */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem; /* More space between experience entries */
+}
+
+.experience-item {
+  background-color: #ffffff; /* White background for cards */
+  border-left: 6px solid #4a69bd; /* More prominent accent line, matching tagline blue */
+  border-radius: 10px; /* Slightly more rounded corners */
+  padding: 2.5rem; /* More padding inside the card */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Softer, more visible shadow */
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.experience-item:hover {
+  transform: translateY(-5px); /* Lift card slightly on hover */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* More intense shadow on hover */
+}
+
+.experience-item .experience-title { /* Specific class for title */
+  font-size: 2rem; /* Larger title */
+  color: #2c3e50; /* Matches section title color */
+  margin-bottom: 0.6rem;
+  font-weight: 700; /* Bolder title */
+}
+
+.experience-item .company-name {
+  font-size: 1.3rem; /* Slightly larger company name */
+  color: #555;
+  margin-bottom: 0.6rem;
+  font-weight: 600; /* Semi-bold */
+}
+
+.experience-item .duration {
+  font-size: 1.05rem; /* Slightly adjusted size */
+  color: #777;
+  margin-bottom: 1.8rem; /* More space below duration */
+  font-style: italic; /* Italicize duration */
+}
+
+.experience-item .experience-description-list { /* Specific class for ul */
+  list-style: disc; /* Use bullet points */
+  margin: 0;
+  padding-left: 1.8rem; /* Indent bullet points more */
+}
+
+.experience-item li {
+  font-size: 1.15rem; /* Slightly larger description text */
+  color: #444; /* Darker text for readability */
+  margin-bottom: 0.8rem; /* More space between bullet points */
+  line-height: 1.6; /* Increased line height for better readability */
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .section-title {
+      font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-section {
+      padding: 4rem 1.5rem;
+  }
+
+  .section-title {
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+  }
+
+  .experience-item {
+      padding: 2rem;
+  }
+
+  .experience-item .experience-title {
+      font-size: 1.8rem;
+  }
+
+  .experience-item .company-name {
+      font-size: 1.2rem;
+  }
+
+  .experience-item .duration {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+  }
+
+  .experience-item li {
+      font-size: 1.05rem;
+      margin-bottom: 0.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-section {
+      padding: 3rem 1rem;
+  }
+
+  .section-title {
+      font-size: 2rem;
+      margin-bottom: 2.5rem;
+  }
+
+  .experience-item {
+      padding: 1.5rem;
+  }
+
+  .experience-item .experience-title {
+      font-size: 1.5rem;
+  }
+
+  .experience-item .company-name {
+      font-size: 1.1rem;
+  }
+
+  .experience-item .duration {
+      font-size: 0.9rem;
+  }
+
+  .experience-item li {
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+      padding-left: 1.5rem;
+  }
+}
