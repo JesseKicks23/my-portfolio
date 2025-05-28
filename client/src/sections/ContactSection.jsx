@@ -43,7 +43,7 @@ function ContactSection() {
         </div>
         <div className="contact-item">
           <FaGithub className="contact-icon" /> {/* Added icon class */}
-          <a href="https://github.com/JesseH-T" target="_blank" rel="noopener noreferrer" className="contact-link">
+          <a href="" target="_blank" rel="noopener noreferrer" className="contact-link">
             github.com/JesseH-T
           </a>
         </div>

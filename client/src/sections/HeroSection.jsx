@@ -15,8 +15,7 @@ function HeroSection() {
 
         {/* Introduction Paragraph */}
         <p className="intro-text">
-          Welcome to my portfolio! I'm passionate about transforming complex ideas into intuitive and robust web applications.
-          With a focus on clean code and user-centric design, I'm constantly learning and eager to contribute to innovative projects that make a difference.
+          Welcome to my portfolio! I'm passionate about transforming complex ideas into intuitive and robust web applications. I'm constantly learning and eager to contribute to innovative projects that make a difference.
         </p>
 
         {/* Action Buttons / Social Links */}
