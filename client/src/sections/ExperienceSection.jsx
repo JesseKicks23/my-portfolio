@@ -6,7 +6,7 @@ function ExperienceSection() {
     {
       title: 'Summer Intern',
       company: 'Setton Pistachio of Terra Bella, Inc.',
-      duration: 'June 16, 2025 – August 8, 2025', // Consistent date format
+      duration: 'June 16, 2025 – August 8, 2025', 
       description: [
         'Selected for a competitive cross-functional internship at one of the largest pistachio growers and processors in the U.S., designed to provide hands-on exposure across key departments including Engineering, Quality Assurance, Grower Relations, and Logistics.',
         'Collaborating on capital improvement and automation projects under the supervision of engineering and maintenance teams, gaining real-world experience in **robotics, process optimization, and industrial automation.',
@@ -15,7 +15,7 @@ function ExperienceSection() {
     {
       title: 'Full Stack Developer',
       company: 'UNiFOODi – UC Merced Startup',
-      duration: 'January 2025 – May 2025', // Consistent date format
+      duration: 'January 2025 – May 2025', 
       description: [
         'Designed and implemented the front-end interface using React, creating a clean, responsive UI with an original color scheme and layout focused on accessibility and student usability.',
         'Collaborated on back-end development to integrate email notification functionality: Triggered alerts when the ML model detected food items on the live feed. Automated email delivery using SuprSend, notifying subscribed users of available surplus food.',
@@ -23,7 +23,7 @@ function ExperienceSection() {
     },
     {
       title: 'Web/App Support Lead',
-      company: 'The University of California Basic Needs Center', // Trimmed extra spaces
+      company: 'The University of California Basic Needs Center', 
       duration: 'July 2023 – Present',
       description: [
         'Conducted extensive testing and design upgrades, adhering to web development rules and guaranteeing cross-browser compatibility. Integrated multimedia components successfully to generate compelling content, resulting in a better user experience.',

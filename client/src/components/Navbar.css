@@ -10,24 +10,24 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.2rem 4rem; /* More generous padding, slight increase */
+  padding: 1.2rem 4rem; 
   background-color: #202a33; /* Deeper, richer dark blue/almost black */
-  /* background: linear-gradient(to right, #2c3e50, #1a232f); */ /* Optional: subtle gradient */
-  color: #e0e0e0; /* Softer light text */
-  position: sticky; /* Makes it stick to the top */
+  
+  color: #e0e0e0; 
+  position: sticky; 
   top: 0;
-  z-index: 1000; /* Ensures it's above other content */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* More diffused shadow */
+  z-index: 1000;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
   font-family: 'Poppins', sans-serif; /* Apply modern font (make sure it's imported globally) */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* Subtle bottom border */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05); 
 }
 
 .navbar-brand {
-  font-size: 2rem; /* Larger and more prominent */
-  font-weight: 700; /* Bolder */
-  color: #fff; /* Pure white for brand name */
+  font-size: 2rem; 
+  font-weight: 700; 
+  color: #fff; 
   text-decoration: none;
-  letter-spacing: -0.5px; /* Slightly tighter letter spacing */
+  letter-spacing: -0.5px; 
 }
 
 /* --- Desktop Navigation Links --- */
@@ -36,27 +36,27 @@
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 3rem; /* Increased space between links */
+  gap: 3rem; 
 }
 
 .navbar-links li {
-  margin: 0; /* Ensure no extra margin */
+  margin: 0; 
 }
 
 .navbar-links a {
-  color: #e0e0e0; /* Softer light color for links */
+  color: #e0e0e0; 
   text-decoration: none;
-  font-size: 1.1rem; /* Slightly refined size */
+  font-size: 1.1rem; 
   font-weight: 500;
-  transition: color 0.3s ease, transform 0.2s ease-out; /* Add transform transition */
-  padding-bottom: 0.3rem; /* More space for underline */
+  transition: color 0.3s ease, transform 0.2s ease-out; 
+  padding-bottom: 0.3rem; 
   position: relative;
-  display: inline-block; /* Essential for transform */
+  display: inline-block; 
 }
 
 .navbar-links a:hover {
-  color: #6a93cb; /* Brighter accent blue on hover */
-  transform: translateY(-2px); /* Subtle lift on hover */
+  color: #6a93cb; 
+  transform: translateY(-2px); 
 }
 
 /* Enhanced Underline Effect */
@@ -66,53 +66,53 @@
   width: 0;
   height: 2px;
   bottom: 0;
-  left: 50%; /* Start from center */
-  transform: translateX(-50%); /* Center the line */
-  background-color: #6a93cb; /* Accent color */
-  transition: width 0.3s ease-in-out; /* Smooth width transition */
+  left: 50%; 
+  transform: translateX(-50%); 
+  background-color: #6a93cb; 
+  transition: width 0.3s ease-in-out; 
 }
 
 .navbar-links a:hover::after,
-.navbar-links a.active-link::after /* For active link styling, if implemented */ {
+.navbar-links a.active-link::after  {
   width: 100%;
 }
 
 
 /* --- Hamburger Menu Styles (for mobile) --- */
 .hamburger-menu {
-  display: none; /* Hidden by default on desktop */
+  display: none; 
   background: none;
   border: none;
   cursor: pointer;
   padding: 0.5rem;
   position: relative;
-  z-index: 1001; /* Ensure it's above other elements */
-  display: flex; /* Make it a flex container for centering bars */
+  z-index: 1001; 
+  display: flex; 
   flex-direction: column;
   justify-content: space-around;
-  height: 20px; /* Adjust height to fit bars */
-  width: 30px; /* Adjust width */
+  height: 20px; 
+  width: 30px; 
 }
 
 .hamburger-menu .bar {
   display: block;
-  width: 100%; /* Full width */
-  height: 2px; /* Thinner bars */
-  background-color: #fff; /* White bars */
-  margin: 4px 0; /* Slightly less margin */
+  width: 100%; 
+  height: 2px; 
+  background-color: #fff; 
+  margin: 4px 0; 
   transition: all 0.3s ease-in-out;
   border-radius: 2px;
 }
 
 /* Hamburger active state (X shape) */
 .hamburger-menu.active .bar:nth-child(2) {
-  opacity: 0; /* Hide middle bar */
+  opacity: 0; 
 }
 .hamburger-menu.active .bar:nth-child(1) {
-  transform: translateY(6px) rotate(45deg); /* Adjusted transform */
+  transform: translateY(6px) rotate(45deg); 
 }
 .hamburger-menu.active .bar:nth-child(3) {
-  transform: translateY(-6px) rotate(-45deg); /* Adjusted transform */
+  transform: translateY(-6px) rotate(-45deg); 
 }
 
 
@@ -123,7 +123,7 @@
   }
 
   .navbar-links {
-    gap: 1.5rem; /* Reduce gap on slightly smaller desktops */
+    gap: 1.5rem;
   }
 
   .navbar-brand {
@@ -134,7 +134,7 @@
 @media (max-width: 768px) { /* Common breakpoint for tablets and below */
   .navbar {
     padding: 1rem 1.5rem;
-    position: relative; /* Essential for absolute positioning of mobile menu */
+    position: relative; 
   }
 
   .navbar-brand {
@@ -142,44 +142,44 @@
   }
 
   .hamburger-menu {
-    display: flex; /* Show hamburger on mobile */
+    display: flex; 
   }
 
   .navbar-links {
     /* Mobile Menu as Full-Screen Overlay/Drawer */
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center links vertically */
-    align-items: center; /* Center links horizontally */
-    position: fixed; /* Fixed position for full screen overlay */
+    justify-content: center; 
+    align-items: center; 
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(32, 42, 51, 0.98); /* Semi-transparent dark overlay */
-    backdrop-filter: blur(8px); /* Subtle blur effect */
-    transition: transform 0.4s cubic-bezier(0.7, 0, 0.2, 1), opacity 0.4s ease-out; /* Smooth slide-in and fade */
-    transform: translateX(100%); /* Start off-screen to the right */
-    opacity: 0; /* Start invisible */
-    pointer-events: none; /* Prevent clicks when hidden */
-    z-index: 999; /* Below hamburger but above content */
+    background-color: rgba(32, 42, 51, 0.98); 
+    backdrop-filter: blur(8px); 
+    transition: transform 0.4s cubic-bezier(0.7, 0, 0.2, 1), opacity 0.4s ease-out; 
+    transform: translateX(100%); 
+    opacity: 0; 
+    pointer-events: none; 
+    z-index: 999; 
   }
 
   .navbar-links.active {
-    transform: translateX(0); /* Slide in from right */
-    opacity: 1; /* Fade in */
-    pointer-events: all; /* Enable clicks when active */
+    transform: translateX(0); 
+    opacity: 1; 
+    pointer-events: all; 
   }
 
-  /* Staggered animation for list items when menu is active */
+  
   .navbar-links li {
     padding: 1rem 0;
-    opacity: 0; /* Start links invisible */
-    transform: translateY(20px); /* Start links slightly down */
+    opacity: 0; 
+    transform: translateY(20px); 
     transition: opacity 0.4s ease-out, transform 0.4s ease-out;
   }
 
-  /* Apply transition delays for staggering effect */
+  
   .navbar-links.active li:nth-child(1) { transition-delay: 0.1s; opacity: 1; transform: translateY(0); }
   .navbar-links.active li:nth-child(2) { transition-delay: 0.2s; opacity: 1; transform: translateY(0); }
   .navbar-links.active li:nth-child(3) { transition-delay: 0.3s; opacity: 1; transform: translateY(0); }
@@ -188,21 +188,21 @@
 
 
   .navbar-links a {
-    color: #fff; /* Pure white for mobile links */
-    font-size: 1.8rem; /* Much larger for touch */
+    color: #fff; 
+    font-size: 1.8rem; 
     padding: 0.8rem 0;
-    display: block; /* Make links take full available width for tapping */
-    width: fit-content; /* Allow content to dictate width for centering */
-    /* Remove underline on hover for mobile to keep clean */
+    display: block; 
+    width: fit-content; 
+    
     &::after {
       display: none;
     }
   }
 
   .navbar-links a:hover {
-    background-color: transparent; /* No background hover */
+    background-color: transparent; 
     color: #6a93cb;
-    transform: scale(1.05); /* Slight scale on hover/tap */
+    transform: scale(1.05); 
   }
 }
 

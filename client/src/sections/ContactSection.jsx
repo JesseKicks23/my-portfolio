@@ -1,10 +1,8 @@
 import React from 'react';
-import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa'; // Removed FaPhoneAlt as per original comment and typical portfolio practice
+import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa'; 
 import './ContactSection.css';
 
 function ContactSection() {
-  // The handleSubmit function is commented out as the form is commented out.
-  // If you re-enable the form, you'll need to uncomment and properly implement this.
   /*
   const handleSubmit = (e) => {
     e.preventDefault();

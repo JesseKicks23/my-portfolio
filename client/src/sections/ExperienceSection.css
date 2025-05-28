@@ -1,86 +1,86 @@
 /* ExperienceSection.css */
 
 .experience-section {
-  padding: 5rem 2rem; /* Increased padding top/bottom */
-  background-color: #f8f9fa; /* Slightly lighter background */
+  padding: 5rem 2rem; 
+  background-color: #f8f9fa; 
   text-align: center;
 }
 
 .section-title { /* New class for section titles */
-  font-size: 3rem; /* Larger and more prominent */
-  margin-bottom: 3.5rem; /* More space below title */
-  color: #2c3e50; /* Darker, professional color */
-  position: relative; /* For potential underline effect */
-  display: inline-block; /* To center underline */
+  font-size: 3rem; 
+  margin-bottom: 3.5rem; 
+  color: #2c3e50; 
+  position: relative; 
+  display: inline-block; 
 }
 
 .section-title::after { /* Optional: Underline effect */
   content: '';
   position: absolute;
   left: 50%;
-  bottom: -10px; /* Adjust distance from text */
+  bottom: -10px; 
   transform: translateX(-50%);
-  width: 60px; /* Length of the underline */
-  height: 4px; /* Thickness of the underline */
-  background-color: #4a69bd; /* Accent color */
+  width: 60px; 
+  height: 4px; 
+  background-color: #4a69bd; 
   border-radius: 2px;
 }
 
 .experience-container {
-  max-width: 950px; /* Slightly wider container */
+  max-width: 950px; 
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 3rem; /* More space between experience entries */
+  gap: 3rem; 
 }
 
 .experience-item {
-  background-color: #ffffff; /* White background for cards */
-  border-left: 6px solid #4a69bd; /* More prominent accent line, matching tagline blue */
-  border-radius: 10px; /* Slightly more rounded corners */
-  padding: 2.5rem; /* More padding inside the card */
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Softer, more visible shadow */
+  background-color: #ffffff; 
+  border-left: 6px solid #4a69bd; 
+  border-radius: 10px;
+  padding: 2.5rem; 
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); 
   text-align: left;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .experience-item:hover {
   transform: translateY(-5px); /* Lift card slightly on hover */
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* More intense shadow on hover */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); 
 }
 
 .experience-item .experience-title { /* Specific class for title */
   font-size: 2rem; /* Larger title */
-  color: #2c3e50; /* Matches section title color */
+  color: #2c3e50; 
   margin-bottom: 0.6rem;
-  font-weight: 700; /* Bolder title */
+  font-weight: 700; 
 }
 
 .experience-item .company-name {
-  font-size: 1.3rem; /* Slightly larger company name */
+  font-size: 1.3rem; 
   color: #555;
   margin-bottom: 0.6rem;
-  font-weight: 600; /* Semi-bold */
+  font-weight: 600; 
 }
 
 .experience-item .duration {
-  font-size: 1.05rem; /* Slightly adjusted size */
+  font-size: 1.05rem; 
   color: #777;
-  margin-bottom: 1.8rem; /* More space below duration */
-  font-style: italic; /* Italicize duration */
+  margin-bottom: 1.8rem; 
+  font-style: italic; 
 }
 
 .experience-item .experience-description-list { /* Specific class for ul */
-  list-style: disc; /* Use bullet points */
+  list-style: disc; 
   margin: 0;
-  padding-left: 1.8rem; /* Indent bullet points more */
+  padding-left: 1.8rem; 
 }
 
 .experience-item li {
-  font-size: 1.15rem; /* Slightly larger description text */
-  color: #444; /* Darker text for readability */
-  margin-bottom: 0.8rem; /* More space between bullet points */
-  line-height: 1.6; /* Increased line height for better readability */
+  font-size: 1.15rem; 
+  color: #444; 
+  margin-bottom: 0.8rem; 
+  line-height: 1.6; 
 }
 
 /* Responsive adjustments */

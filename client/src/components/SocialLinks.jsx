@@ -1,6 +1,6 @@
 // src/components/SocialLinks.jsx
 import React from 'react';
-import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa'; // You'll need to install react-icons
+import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa'; 
 import './SocialLinks.css';
 
 function SocialLinks() {

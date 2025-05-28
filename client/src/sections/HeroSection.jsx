@@ -1,6 +1,6 @@
 import React from 'react';
-import SocialLinks from '../components/SocialLinks'; // Ensure this path is correct
-import ResumeDownloadButton from "../components/ResumeDownloadButton"; // Ensure this path is correct
+import SocialLinks from '../components/SocialLinks'; 
+import ResumeDownloadButton from "../components/ResumeDownloadButton"; 
 import './HeroSection.css';
 
 function HeroSection() {

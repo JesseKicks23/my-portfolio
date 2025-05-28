@@ -1,7 +1,7 @@
 /* src/sections/ProjectsSection.css */
 .projects-section {
-  padding: 5rem 2rem; /* Consistent padding with other sections */
-  background-color: #f0f2f5; /* Light grey background, slightly different from hero for contrast */
+  padding: 5rem 2rem; 
+  background-color: #f0f2f5; 
   text-align: center;
 }
 
@@ -22,126 +22,126 @@
   transform: translateX(-50%);
   width: 60px;
   height: 4px;
-  background-color: #4a69bd; /* Matching accent color */
+  background-color: #4a69bd; 
   border-radius: 2px;
 }
 
 .projects-container {
-  display: grid; /* Use CSS Grid for a nice layout */
-  grid-template-columns: 1fr; /* Force single column if only one project */
-  gap: 2.5rem; /* Space between project cards (will not be visible with one project) */
-  max-width: 800px; /* Constrain max-width for a single, prominent card */
-  margin: 0 auto; /* Center the grid/card */
+  display: grid; 
+  grid-template-columns: 1fr; 
+  gap: 2.5rem; 
+  max-width: 800px; 
+  margin: 0 auto; 
 }
 
 .project-card {
   background-color: #fff;
-  border-radius: 10px; /* Consistent border-radius */
-  padding: 2.5rem; /* More generous padding */
+  border-radius: 10px; 
+  padding: 2.5rem; 
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Softer, more visible shadow */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
   display: flex;
   flex-direction: column;
   justify-content: space-between; /* Ensures buttons stick to bottom */
-  text-align: left; /* Align text within the card to the left */
+  text-align: left; 
 }
 
 .project-card:hover {
-  transform: translateY(-5px); /* Lift effect on hover */
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* More intense shadow on hover */
+  transform: translateY(-5px); 
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); 
 }
 
 .project-image-container { /* Styling for image container */
   margin-bottom: 1.5rem;
-  border-radius: 8px; /* Slightly less rounded than card */
-  overflow: hidden; /* Ensures image respects border-radius */
+  border-radius: 8px; 
+  overflow: hidden; 
   box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Subtle shadow for image */
 }
 
 .project-image {
   width: 100%;
-  height: 300px; /* Increased height for a single, prominent image */
-  object-fit: cover; /* Ensures image covers area without distortion */
-  display: block; /* Remove extra space below image */
+  height: 300px; 
+  object-fit: cover; 
+  display: block; 
 }
 
 
 .project-card .project-title { /* Specific class for title */
-  font-size: 2.2rem; /* Slightly larger title for single project */
+  font-size: 2.2rem; 
   margin-bottom: 0.8rem;
-  color: #4a69bd; /* Accent color for titles */
-  font-weight: 700; /* Bolder title */
+  color: #4a69bd; 
+  font-weight: 700; 
 }
 
 .project-card .project-description { /* Specific class for description */
   font-size: 1.15rem; /* Consistent description text size */
-  color: #444; /* Darker text for better readability */
+  color: #444; 
   line-height: 1.6;
-  margin-bottom: 1.8rem; /* More space below description */
-  flex-grow: 1; /* Allows description to take available space */
+  margin-bottom: 1.8rem; 
+  flex-grow: 1; 
 }
 
 .project-technologies {
   margin-top: 1rem;
-  margin-bottom: 1.8rem; /* Space between technologies and buttons */
+  margin-bottom: 1.8rem; 
   display: flex;
   flex-wrap: wrap;
-  gap: 0.7rem; /* More space between badges */
+  gap: 0.7rem; 
   justify-content: flex-start; /* Align badges to the left */
 }
 
 .tech-badge {
-  background-color: #e0e7ed; /* Light grey-blue background for badges */
-  color: #333; /* Darker text color */
-  padding: 0.6rem 1.2rem; /* Padding inside badges */
-  border-radius: 20px; /* Pill-shaped badges */
-  font-size: 0.95rem; /* Consistent font size for badges */
+  background-color: #e0e7ed; 
+  color: #333; 
+  padding: 0.6rem 1.2rem; 
+  border-radius: 20px; 
+  font-size: 0.95rem;
   font-weight: 500;
-  border: 1px solid #cdd5dc; /* Subtle border for definition */
-  white-space: nowrap; /* Prevent text from wrapping within a badge */
+  border: 1px solid #cdd5dc; 
+  white-space: nowrap; 
   transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
 .tech-badge:hover {
-  background-color: #4a69bd; /* Accent blue on hover */
-  color: #ffffff; /* White text on hover */
-  border-color: #4a69bd; /* Match border on hover */
+  background-color: #4a69bd; 
+  color: #ffffff; 
+  border-color: #4a69bd; 
 }
 
 .project-links { /* Container for buttons */
   display: flex;
-  gap: 1rem; /* Space between buttons */
-  margin-top: auto; /* Pushes buttons to the bottom if content varies */
-  justify-content: flex-start; /* Align buttons to the left */
+  gap: 1rem; 
+  margin-top: auto; 
+  justify-content: flex-start; 
 }
 
 .project-button {
   display: inline-block;
-  background-color: #4a69bd; /* Accent color for buttons */
+  background-color: #4a69bd; 
   color: white;
-  padding: 0.8rem 1.6rem; /* More padding for buttons */
-  border-radius: 8px; /* Consistent border-radius for buttons */
+  padding: 0.8rem 1.6rem; 
+  border-radius: 8px; 
   text-decoration: none;
-  font-size: 1.05rem; /* Slightly larger button font */
-  font-weight: 600; /* Semi-bold button text */
+  font-size: 1.05rem; 
+  font-weight: 600; 
   transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
-  border: none; /* Ensure no default button border */
+  border: none; 
   cursor: pointer;
 }
 
 .project-button:hover {
-  background-color: #2c3e50; /* Darker accent on hover */
-  transform: translateY(-2px); /* Subtle lift on hover */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+  background-color: #2c3e50; 
+  transform: translateY(-2px); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
-/* Specific styling for the GitHub button if you want it different */
+
 .project-button.github-button {
   background-color: #6c757d; /* A neutral gray for GitHub */
 }
 
 .project-button.github-button:hover {
-  background-color: #495057; /* Darker gray on hover */
+  background-color: #495057; 
 }
 
 
@@ -151,7 +151,7 @@
       font-size: 2.8rem;
   }
   .projects-container {
-      max-width: 700px; /* Adjusted max-width for single card on medium screens */
+      max-width: 700px; 
   }
   .project-card {
       padding: 2rem;
@@ -163,7 +163,7 @@
       font-size: 1.1rem;
   }
   .project-image {
-      height: 250px; /* Adjust image height for medium screens */
+      height: 250px; 
   }
 }
 
@@ -176,13 +176,13 @@
       margin-bottom: 3rem;
   }
   .projects-container {
-      max-width: 500px; /* Adjusted max-width for single card on smaller screens */
+      max-width: 500px; 
   }
   .project-card {
       padding: 1.8rem;
   }
   .project-image {
-      height: 200px; /* Adjust image height for small screens */
+      height: 200px; 
   }
 }
 
@@ -195,7 +195,7 @@
       margin-bottom: 2.5rem;
   }
   .projects-container {
-      max-width: 100%; /* Allow full width on very small screens */
+      max-width: 100%; 
   }
   .project-card {
       padding: 1.5rem;

@@ -1,59 +1,57 @@
 /* HeroSection.css */
 
 .hero-section {
-  min-height: 90vh; /* Increased for a more prominent hero area */
+  min-height: 90vh; 
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #f8f9fa; /* Slightly brighter background */
-  padding: 3rem 1.5rem; /* More generous padding */
-  box-sizing: border-box; /* Include padding in element's total width and height */
-  /* Optional: subtle background pattern or gradient */
-  /* background-image: linear-gradient(135deg, #f8f9fa 0%, #e0e7ed 100%); */
+  background-color: #f8f9fa; 
+  padding: 3rem 1.5rem;   
+  box-sizing: border-box; 
 }
 
 .hero-content {
   display: flex;
-  flex-direction: column; /* Stacks items vertically */
-  align-items: center; /* Centers items horizontally */
-  gap: 1.5rem; /* Space between elements */
-  max-width: 900px; /* Limits content width for better readability */
-  width: 100%; /* Ensures it takes available width within max-width */
+  flex-direction: column; 
+  align-items: center; 
+  gap: 1.5rem; 
+  max-width: 900px; 
+  width: 100%; 
 }
 
 /* Heading */
 .hero-content h1 {
-  font-size: 3.8rem; /* Larger font size */
+  font-size: 3.8rem; 
   margin-bottom: 0.5rem;
-  color: #2c3e50; /* Darker, more professional color */
-  letter-spacing: -0.03em; /* Tighten letter spacing slightly */
+  color: #2c3e50; 
+  letter-spacing: -0.03em; 
 }
 
 /* Tagline */
 .hero-content .tagline {
-  font-size: 1.6rem; /* Slightly larger tagline */
-  color: #4a69bd; /* A subtle blue for distinction */
-  margin-bottom: 1.8rem; /* More space below tagline */
-  font-weight: 500; /* Medium font weight */
+  font-size: 1.6rem; 
+  color: #4a69bd; 
+  margin-bottom: 1.8rem; 
+  font-weight: 500; 
 }
 
 /* Introduction Paragraph */
 .hero-content .intro-text {
-  font-size: 1.25rem; /* Slightly larger paragraph text */
-  max-width: 750px; /* Optimize line length for readability */
-  margin: 0 auto 2.5rem auto; /* More margin below the text */
-  line-height: 1.7; /* Increased line height for better readability */
-  color: #555; /* Slightly darker grey */
+  font-size: 1.25rem;
+  max-width: 750px; 
+  margin: 0 auto 2.5rem auto; 
+  line-height: 1.7; 
+  color: #555; 
 }
 
 /* Actions Container */
 .hero-actions {
   display: flex;
-  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 1.5rem; /* Space between buttons/links */
-  margin-top: 1rem; /* Space above actions */
+  gap: 1.5rem; 
+  margin-top: 1rem; 
 }
 
 /* Media Queries for Responsiveness */
@@ -72,7 +70,7 @@
   }
 
   .hero-actions {
-      flex-direction: column; /* Stack buttons vertically on small screens */
+      flex-direction: column; 
       gap: 1rem;
   }
 }

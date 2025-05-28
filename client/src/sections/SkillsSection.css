@@ -1,8 +1,8 @@
 /* SkillsSection.css */
 
 .skills-section {
-  padding: 5rem 2rem; /* Consistent padding with other sections */
-  background-color: #f0f2f5; /* A slightly different light background to break monotony */
+  padding: 5rem 2rem; 
+  background-color: #f0f2f5; 
   text-align: center;
 }
 
@@ -29,23 +29,23 @@
 
 .skills-container {
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap to next line */
+  flex-wrap: wrap; 
   justify-content: center;
-  gap: 2.5rem; /* More space between skill categories */
-  max-width: 1100px; /* Wider container for more items per row */
+  gap: 2.5rem; 
+  max-width: 1100px; 
   margin: 0 auto;
 }
 
-.skill-category-card { /* Renamed class for consistency (e.g., experience-item, hero-content) */
-  background-color: #ffffff; /* White background for cards */
-  border-radius: 10px; /* More rounded corners */
-  padding: 2.5rem 2rem; /* More generous padding */
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Softer, more visible shadow */
-  flex: 1; /* Allow flexible sizing */
-  min-width: 280px; /* Minimum width for each category */
-  max-width: 350px; /* Max width to control how many fit per row */
-  text-align: center; /* Center content within the card */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+.skill-category-card { 
+  background-color: #ffffff; 
+  border-radius: 10px; 
+  padding: 2.5rem 2rem; 
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); 
+  flex: 1; 
+  min-width: 280px; 
+  max-width: 350px; 
+  text-align: center; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .skill-category-card:hover {
@@ -53,39 +53,39 @@
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* More intense shadow on hover */
 }
 
-.skill-category-title { /* Specific class for category titles */
+.skill-category-title { 
   font-size: 2rem;
-  margin-bottom: 1.8rem; /* More space below category title */
-  color: #4a69bd; /* Accent color for category titles */
-  font-weight: 700; /* Bolder category titles */
+  margin-bottom: 1.8rem; 
+  color: #4a69bd; 
+  font-weight: 700; 
 }
 
 .skill-list { /* Specific class for the ul */
-  list-style: none; /* Remove default bullet points */
+  list-style: none; 
   padding: 0;
   margin: 0;
-  display: flex; /* Use flexbox for badges */
-  flex-wrap: wrap; /* Allow badges to wrap */
-  justify-content: center; /* Center badges within the card */
-  gap: 0.7rem; /* Space between skill badges */
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 0.7rem; 
 }
 
-.skill-item-badge { /* Styling for individual skill "badges" */
-  background-color: #e0e7ed; /* Light grey-blue background for badges */
-  color: #333; /* Darker text color */
-  padding: 0.6rem 1.2rem; /* Padding inside badges */
-  border-radius: 20px; /* Pill-shaped badges */
+.skill-item-badge { 
+  background-color: #e0e7ed; 
+  color: #333; 
+  padding: 0.6rem 1.2rem; 
+  border-radius: 20px; 
   font-size: 1rem;
   font-weight: 500;
-  border: 1px solid #cdd5dc; /* Subtle border for definition */
-  white-space: nowrap; /* Prevent text from wrapping within a badge */
+  border: 1px solid #cdd5dc; 
+  white-space: nowrap; 
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .skill-item-badge:hover {
-  background-color: #4a69bd; /* Change background on hover */
-  color: #ffffff; /* Change text color on hover */
-  border-color: #4a69bd; /* Match border on hover */
+  background-color: #4a69bd; 
+  color: #ffffff; 
+  border-color: #4a69bd; 
 }
 
 /* Responsive adjustments */
@@ -108,9 +108,9 @@
   }
   .skill-category-card {
       padding: 2rem 1.5rem;
-      min-width: unset; /* Remove min-width on small screens */
-      width: 100%; /* Take full width */
-      max-width: 400px; /* Limit max width for readability */
+      min-width: unset; 
+      width: 100%; 
+      max-width: 400px; 
   }
   .skills-container {
       gap: 2rem;

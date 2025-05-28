@@ -1,8 +1,8 @@
-import React, { useState } from 'react'; // Import useState for managing mobile menu state
+import React, { useState } from 'react'; 
 import './Navbar.css';
 
 function Navbar() {
-  const [isOpen, setIsOpen] = useState(false); // State to manage mobile menu open/close
+  const [isOpen, setIsOpen] = useState(false); 
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -18,7 +18,7 @@ function Navbar() {
 
       {/* Hamburger icon for mobile */}
       <button
-        className={`hamburger-menu ${isOpen ? 'active' : ''}`} // Add 'active' class based on isOpen state
+        className={`hamburger-menu ${isOpen ? 'active' : ''}`} 
         onClick={toggleMenu}
         aria-expanded={isOpen}
         aria-controls="navbar-links"
@@ -28,7 +28,7 @@ function Navbar() {
         <span className="bar"></span>
       </button>
 
-      {/* Navigation links - will be a full-screen overlay on mobile when active */}
+      {}
       <ul id="navbar-links" className={`navbar-links ${isOpen ? 'active' : ''}`}>
         <li><a href="#home" onClick={closeMenu}>Home</a></li>
         <li><a href="#projects" onClick={closeMenu}>Projects</a></li>
