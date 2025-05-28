@@ -1,9 +1,4 @@
-/*
- * IMPORTANT: Add this font import to your global CSS file (e.g., src/index.css or src/App.css)
- * for the 'Poppins' font to be available throughout your application.
- *
- * @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
- */
+
 
 /* --- Base Navbar Styles --- */
 .navbar {
@@ -11,14 +6,14 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.2rem 4rem; 
-  background-color: #202a33; /* Deeper, richer dark blue/almost black */
+  background-color: #202a33; 
   
   color: #e0e0e0; 
   position: sticky; 
   top: 0;
   z-index: 1000;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
-  font-family: 'Poppins', sans-serif; /* Apply modern font (make sure it's imported globally) */
+  font-family: 'Poppins', sans-serif; 
   border-bottom: 1px solid rgba(255, 255, 255, 0.05); 
 }
 
