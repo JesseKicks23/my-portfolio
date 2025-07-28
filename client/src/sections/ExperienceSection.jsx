@@ -9,7 +9,7 @@ function ExperienceSection() {
       duration: 'June 16, 2025 – August 8, 2025', 
       description: [
         'Selected for a competitive cross-functional internship at one of the largest pistachio growers and processors in the U.S., designed to provide hands-on exposure across key departments including Engineering, Quality Assurance, Grower Relations, and Logistics.',
-        'Collaborating on capital improvement and automation projects under the supervision of engineering and maintenance teams, gaining real-world experience in **robotics, process optimization, and industrial automation.',
+        'Collaborating on capital improvement and automation projects under the supervision of engineering and maintenance teams, gaining real-world experience in robotics, process optimization, and industrial automation.',
       ],
     },
     {
